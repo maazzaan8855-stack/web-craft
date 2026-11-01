@@ -2,27 +2,25 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Web Craft | Mohamed Samir Abbas</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <nav>
 <div class="container nav-inner">
 <div class="logo-area">
 <img src="logo.png.png" alt="logo" class="logo-img">
-<span class="logo-text"><h1>Web...Craft</h1></span>
+<span class="logo-text">Web Craft</span>
 </div>
-<div>
+<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
 <button id="langBtn">EN</button>
 <a href="#services" class="btn small" data-ar="خدماتي" data-en="Services">خدماتي</a>
 </div>
 </div>
 </nav>
-
 <header class="hero">
 <img src="mmm.img.jpeg" alt="bg" class="bg-img">
 <div class="overlay"></div>
@@ -32,7 +30,6 @@
 <a href="#services" class="btn" data-ar="شاهد خدماتي" data-en="View My Services">شاهد خدماتي</a>
 </div>
 </header>
-
 <section class="container section">
 <h2 class="sec-title" data-ar="نبذة عني" data-en="About Me">نبذة عني</h2>
 <div class="box">
@@ -40,7 +37,6 @@
 <p data-ar="أنا محمد سمير ، مطور ويب وبناء مواقع متجاوبة وديناميكية وسريعة." data-en="I'm Mohamed Samir Abbas, a passionate web developer building responsive, dynamic and fast websites.">أنا محمد سمير ، مطور ويب وبناء مواقع متجاوبة وديناميكية وسريعة.</p>
 </div>
 </section>
-
 <section id="services" class="container section">
 <h2 class="sec-title" data-ar="خدماتي" data-en="My Services">خدماتي</h2>
 <p class="sec-sub" data-ar="حلول متكاملة لمشروعك الرقمي" data-en="Complete solutions for your digital project">حلول متكاملة لمشروعك الرقمي</p>
@@ -68,7 +64,6 @@
 </div>
 </div>
 </section>
-
 <section id="works" class="container section">
 <h2 class="sec-title" data-ar="أعمالي" data-en="Portfolio">أعمالي</h2>
 <div class="works-grid">
@@ -77,23 +72,22 @@
 <div class="card"><iframe loading="lazy" src="https://maazzaan8855-stack.github.io/my-work-3/"></iframe><div class="card-info"><span>Project 03</span><a href="https://maazzaan8855-stack.github.io/my-work-3/" target="_blank">↗</a></div></div>
 </div>
 </section>
-
 <section class="container section">
 <h2 class="sec-title" data-ar="شهاداتي" data-en="Certificates">شهاداتي</h2>
 <div class="cert-grid">
-<div class="card"><img src="1111.jpg" class="cert-img"><div class="card-info"><span>html  js</span></div></div>
+<div class="card"><img src="1111.jpg" class="cert-img"><div class="card-info"><span>html js</span></div></div>
 <div class="card"><img src="2222.jpg" class="cert-img"><div class="card-info"><span>PHP</span></div></div>
 <div class="card"><img src="3333.jpg" class="cert-img"><div class="card-info"><span>CSS</span></div></div>
 </div>
 </section>
-
 <section class="container section">
 <h2 class="sec-title" data-ar="آراء العملاء" data-en="Reviews">آراء العملاء</h2>
-<div id="reviewsList"><div class="review"><p>“شغل احترافي وسريع”</p><span>— أحمد</span></div>
-<div id="reviewsList"><div class="review"><p>“اداء مميز وشيك"</p><span>— مازن</span></div>
-<div id="reviewsList"><div class="review"><p>“الالتزام في المعياد”</p><span>— منه الله</span></div></div>
+<div id="reviewsList">
+<div class="review"><p>“شغل احترافي وسريع”</p><span>— أحمد</span></div>
+<div class="review"><p>“اداء مميز وشيك"</p><span>— مازن</span></div>
+<div class="review"><p>“الالتزام في المعياد”</p><span>— منه الله</span></div>
+</div>
 </section>
-
 <section class="container section">
 <div class="two-cols">
 <div class="box">
@@ -104,23 +98,22 @@
 </div>
 <div class="box qr-box">
 <h3 data-ar="امسح للتواصل" data-en="Scan to Contact">امسح للتواصل</h3>
-<img src="qr.png.jpeg" class="qr-img">
+<img src="qr.png.jpeg" class="qr-img" alt="qr">
 </div>
 </div>
 </section>
 <!-- AI CHAT WIDGET -->
-<div id="chatBtn" class="chat-btn"><i class="fas fa-robot"></i></div>
+<div id="chatBtn" class="chat-btn" aria-label="Chat"><i class="fas fa-robot"></i></div>
 <div id="chatBox" class="chat-box">
 <div class="chat-header"><span><i class="fas fa-robot"></i> مساعد Web Craft الذكي</span><span id="closeChat" style="cursor:pointer">✕</span></div>
 <div id="chatMessages" class="chat-messages">
 <div class="msg bot">أهلا! أنا مساعد محمد الذكي 🤖 اسألني عن خدماته، أسعاره، أو أعماله.</div>
 </div>
 <div class="chat-input">
-<input id="chatInput" placeholder="اكتب سؤالك...">
-<button onclick="sendMsg()"><i class="fas fa-paper-plane"></i></button>
+<input id="chatInput" placeholder="اكتب سؤالك..." autocomplete="off">
+<button id="sendBtn" onclick="sendMsg()"><i class="fas fa-paper-plane"></i></button>
 </div>
 </div>
-
 <footer class="footer">
 <p>Web Craft © 2026 - Mohamed Samir Abbas</p>
 <div class="socials">
@@ -130,7 +123,6 @@
 <a class="wa" id="waFooter" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </div>
 </footer>
-
 <a id="waBtn" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 <script src="script.js"></script>
 </body>
